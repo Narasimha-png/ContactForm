@@ -247,18 +247,19 @@ div {
 }
 #copyani{
     background-color: white;
-    width: 20vw;
+  
     display: block;
     margin: auto;
-    border-radius: 14px;
+    border-radius: 17px;
     font-size: 14px;
     letter-spacing: 0.5px;
     animation: copy 1s 1;
     position: fixed;
-    top: 95%;
-    left: 40%;
+    top: 90%;
+    left: 47%;
     z-index: 50;
-    display: none;
+   padding: 5px 20px 5px 20px;
+   display: none;
 }
 #copyani>p{
     color: black;

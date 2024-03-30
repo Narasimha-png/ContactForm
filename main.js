@@ -66,7 +66,7 @@ function redirectgit(){
 function copylink(){
 
    var text = document.getElementById("editlink") ;
-   text.select() ;
+   
    navigator.clipboard.writeText(text.value) ;
    document.getElementById("copyani").style.display="revert" ;
    setTimeout(()=>{

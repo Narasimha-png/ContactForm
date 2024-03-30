@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLNarasimha</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/brushbg-modified.png">
+</head>
+<body onscroll="func()">
+    <div id="main">
+    <nav id="navbar">
+        <div  class="navref">
+            <div><img class="navprof" src="profile(1).jpg" alt=""></div>
+            <div><p id="navname" class="name">Sri Lakshmi Narasimha</p></div>
+            <div onclick="shareurl()"><img class="shareplat" src="option.png" alt=""></div>
+        </div>
+    </nav>
+    <article id="art">
+        <div>
+            <div id="profile"></div>
+            <h3 class="name" id="fname">Sri Lakshmi Narasimha Settipalli</h3>
+            <h3 class="name"></h3>
+            <p id="about">Web Developer || DSA || Leetcode(max 1874 Top 16.11%) </p>
+            <ul id="links">
+                <li><a href="https://www.instagram.com/narasimha_tiger_/?hl=en"><img class="icons" id="insta" src="social.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/slnarasimha/"><img class="icons" src="linkedin.png" alt=""></a></li>
+                <li><a href="mailto:narasimhas9490@gmail.com?subject=I%20Found%20You%20On%20Your%20ContactForm"><img class="icons"  src="gmail.png" alt=""></a></li>
+                <li><a href="https://twitter.com/Narasimha_S_18"><img class="icons" id="x" src="twitter (1).png" alt=""></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=&text=Hel8008130603lo%20Sri%20Lakshmi%20Narasimha"><img class="icons" id="whatsapp" src="whatsapp.png" alt=""></a></li>
+            </ul>
+            <div onclick="location.href='https://drive.google.com/file/d/12Iictm6dL5jU9o5FUMwo0CzOqzqiQdzQ/view'" id="resume">
+               
+                <div ><p id="rtxt">My Resume </p></div>
+                <button onclick="location.href='https://drive.google.com/file/d/12Iictm6dL5jU9o5FUMwo0CzOqzqiQdzQ/view'">View </button>
+               
+
+            </div>
+            <button  class="ref" id="leetcode">
+                <div onclick="location.href='https://leetcode.com/Narasimha-png/'"><img class="plat" src="LeetCode.webp" alt=""></div>
+                <div onclick="location.href='https://leetcode.com/Narasimha-png/'"><p id="platname">LeetCode</p></div>
+                <div onclick="leetcode()"><img class="shareplat" src="option.png" alt=""></div>
+            </button>
+            <button  class="ref" id="leetcode">
+                <div onclick="location.href='https://codeforces.com/profile/NarasimhaTiger'"><img class="plat" src="codeforces.jpg" alt=""></div>
+                <div onclick="location.href='https://codeforces.com/profile/NarasimhaTiger'"><p id="platname">CodeForces</p></div>
+                <div onclick="codeforces"><img class="shareplat" src="option.png" alt=""></div>
+            </button>
+            <button  class="ref" id="leetcode">
+                <div onclick="location.href='https://github.com/Narasimha-png'" ><img class="plat" src="githu.jpg" alt=""></div>
+                <div onclick="location.href='https://github.com/Narasimha-png'"><p id="platname">GitHub</p></div>
+                <div onclick="github(); return false "><img class="shareplat" src="option.png" alt=""></div>
+            </button>
+        </div>
+      
+            
+        <div id="sharetab">
+            <button onclick="document.getElementById('sharetab').style.display='none'" style="cursor: pointer; background-color: white; border: none; justify-self: end;" id="closeit">
+                <img class="plat" src="close.png" alt="">
+            </button>
+            <button onclick="shareonws()" class="sshare" >
+                <div><img class="shareplat" src="whatsapp.png" alt=""></div>
+                <div ><p style="width: 100%;" id="sharename">Share Via WhatsApp</p></div>
+               
+            </button>
+            <button onclick="shareonlinkedin()" class="sshare" id="leetcode">
+                <div><img class="shareplat" src="linkedin.png" alt=""></div>
+                <div ><p id="sharename">Share Via LinkedIn</p></div>
+
+               
+            </button>
+            <button onclick="shareoninsta()" class="sshare" id="leetcode">
+                <div><img class="shareplat" src="instagram (1).png" alt=""></div>
+                <div ><p id="sharename">Share Via Instagram</p></div>
+
+               
+            </button>
+            <button onclick="shareongmail()" class="sshare" id="leetcode">
+                <div><img class="shareplat" src="gmail.png" alt=""></div>
+                <div ><p id="sharename">Share Via GMail</p></div>
+            </button>
+            <div id="copytext">
+                <input id="editlink" type="text" readonly >
+                <button  onclick="copylink()">Copy</button>
+            </div>
+        </div>
+   
+
+        
+    </article>
+    <footer>
+        <a href="https://github.com/Narasimha-png/ContactForm">Edit & Get Your Norch</a>
+        <p>Designed with ❤️ by SriLakshmiNarasimha</p>
+    </footer>
+   
+</div>
+  <div id="copyani"><p>Text Copied</p></div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,402 @@
+* {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#navbar{
+    
+    background-color: lightblue;
+    position: fixed;
+    top: 3%;
+    z-index: 20;
+    border-radius: 30px;
+   
+    flex-shrink: 5;
+    
+    display: none;
+
+}
+body {
+    background-color: black;
+    padding: 10px 100px 10px 100px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+div {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(profile\(1\).jpg);
+    background-size: cover;
+    background-position: 20% 80%;
+    border: 2px solid white;
+    background-clip: content-box;
+    padding: 5px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+
+#fname {
+    padding-top: 20px;
+}
+
+#links {
+    padding: 1em;
+    display: flex;
+    width: fit-content;
+    list-style-type: none;
+    flex-shrink: 5;
+    align-items: center;
+}
+
+.icons {
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+    padding: 15px;
+}
+
+#about {
+    padding: 5px;
+    text-align: center;
+}
+
+#x {
+    filter: invert(0);
+    height: 40px;
+}
+
+#whatsapp {
+    height: 32px;
+    width: 32px;
+}
+#insta{
+    padding-bottom: 7px;
+}
+
+#resume {
+    cursor: pointer;
+    width: 60vw;
+    height: 50vh;
+    position: relative;
+    background-image: url(resume.jpg);
+    box-shadow: 
+        inset 0px 15px 15px 0 white,
+        inset -15px 15px 15px 0 white,
+        inset -15px -15px 15px 0 white,
+        inset 15px -15px 15px 0 white;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+#rtxt  {
+    padding: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 500;
+}
+#hiddenshare{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+#closeit{
+   display: block;
+   margin: auto;
+}
+.ref , .share {
+    cursor: pointer;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 10px;
+    flex-shrink: 2;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: none;
+    transition: 0.3s ease;
+}
+.share{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
+#platname {
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.ref:hover {
+    background-color: black;
+    #platname{
+        color: white;
+    }
+    .shareplat{
+        filter: invert(1);
+    }
+}
+
+.plat , .shareimg {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.shareplat{
+    width: 30px;
+    height: 30px;
+
+}
+.navprof{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px solid black;
+}
+#sharename{
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.ref div:nth-child(2){
+    width: 100%;
+    height: 40px;
+   
+}
+#portdrag{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 4%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+#porttemp{
+    width: 52vw;
+    height: 80vh;
+}
+#resume>button , #copytext > button {
+    cursor: pointer;
+    background-color: greenyellow;
+    width: 20vw;
+    height: 4vh;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin: 40px;
+    padding: 5px;
+    border: 1px solid black;
+
+}
+#copytext>input{
+    color: black;
+    padding: 5px 20px 5px 20px ;
+    border-radius: 15px;
+}
+#copytext>button{
+    width: 12vw;
+    height: 100%;
+    
+}
+#copytext{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#resume>button:hover , #copytext > button:hover {
+    background-color: white;
+    color: black;
+}
+#copyani{
+    background-color: white;
+    width: 20vw;
+    display: block;
+    margin: auto;
+    border-radius: 14px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    animation: copy 1s 1;
+    position: fixed;
+    top: 95%;
+    left: 40%;
+    z-index: 50;
+    display: none;
+}
+#copyani>p{
+    color: black;
+    text-align: center;
+    padding: 3px;
+}
+@keyframes copy {
+    0%{
+        filter: opacity(0);
+    }
+    100%{
+        filter: opacity(1);
+    }
+}
+@keyframes bounceAndFadeIn {
+    0% {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-50%, -40%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+#sharetab {
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    animation: bounceAndFadeIn 1s ease-in-out 1;
+    display: none;
+
+}
+
+
+.sshare{
+    border: none;
+    margin: 10px;
+    background-color: white;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    justify-content: start;
+}
+.navref{
+    display: flex;
+    width: 60vw;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    
+    justify-content: space-around;
+}
+footer{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Media query for screens with a maximum width of 426px */
+@media (max-width: 426px) {
+    #fname {
+        width: 90vw;
+    }
+    
+    #about {
+        width: 60vw;
+    }
+    
+    #resume {
+        width: 90vw;
+        height: 50vh;
+        box-shadow: 
+            inset 0px 15px 15px 0 white,
+            inset -15px 15px 15px 0 white,
+            inset -15px -15px 15px 0 white,
+            inset 15px -15px 15px 0 white;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+    }
+    
+    .ref , .share {
+        width: 90vw;
+    }
+    #sharetab{
+        width: 90vw;
+
+    }
+    .sshare{
+        width: 85vw;
+    }
+    #navname{
+        flex-shrink: 1;
+        flex-wrap: wrap;
+    }
+   .name{
+    font-weight: bold;
+    font-size: 15px;
+   
+    letter-spacing: 0.7px;
+   }
+    .navref{
+        display: flex;
+        width: 90vw;
+        flex-direction: row;
+        align-items: center;
+      
+        flex-shrink: 5;
+        padding: 10px;
+        
+        justify-content: space-around;
+    }
+    .navref > div:first-child,
+.navref > div:last-child {
+    flex-shrink: 0; /* Prevents shrinking for the first and last child divs */
+}
+#porttemp{
+    width: 70vw;
+    height: 80vh;
+}
+}
+
